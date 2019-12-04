@@ -1,7 +1,7 @@
 {
-  "name": "Natours",
+  "name": "Florence",
   "version": "1.0.0",
-  "description": "Landing page for Natours",
+  "description": "Landing page for Florence St-Amand Portfolio",
   "main": "index.js",
   "scripts": {
     "devserver": "node server/server.js",
@@ -13,7 +13,7 @@
     "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
     "build:css": "yarn compile:sass & yarn concat:css & yarn prefix:css & yarn compress:css"
   },
-  "repository": "git@github.com:stamandf/Natours-Website.git",
+  "repository": "git@github.com:stamandf/florence.git",
   "author": "Florence <stamandf@gmail.com>",
   "license": "MIT",
   "dependencies": {
