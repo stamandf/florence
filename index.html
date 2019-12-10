@@ -10,12 +10,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="%PUBLIC_URL%/assets/favicon_io/favicon.ico" />
+		<!-- <link rel="shortcut icon" href="%PUBLIC_URL%/assets/favicon_io/favicon.ico" /> -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 		<link rel="manifest" href="assets/favicon_io/site.webmanifest">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/moment.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -41,8 +42,6 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">My Portfolio</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/florencestamand/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
@@ -56,19 +55,26 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">December 4, 2019</span>
-									<h2><a href="#">Welcome to<br />
-									my portfolio</a></h2>
+									<span class="date">
+										<script type="text/javascript">
+											document.write(moment().format("MMMM Do, YYYY"));
+										</script>
+									</span>
+									<h2><a href="#">Welcome to<br />my portfolio</a></h2>
 									<p>Hi, my name is Florence St-Amand. I am a full stack web developer with a passion for building web applications. 
 										You will find a curated list of my projects that I developed in different technologies.  These technologies include, front-end:
-										 React, Redux. Back-end: Nodejs, Expressjs, Socket.io, MongoDB and Firebase. This website will evolve as I will continue to evolve. 
-										 So, please come back frequently!</p>
+										 HTML5, CSS3, Javascript, React, Redux. Back-end: Nodejs, Expressjs, Socket.io, MongoDB and Firebase. This website will evolve as I will continue to evolve. 
+										 So, please be sure to check back frequently!</p>
 								</header>
 								<!-- <a href="projects/project1.html" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
 								<a href="https://stamandf.github.io/colours-app/" class="image main" target="_blank"><img src="images/david-pisnoyunsplash3.jpg" alt="Colour App" /></a>
-								<!-- <a href="https://cozmicflo-colours-app.herokuapp.com/" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
+								<p> <strong>The Colour Designer App.</strong> 
+									This App allows you to create your own Flat UI Colour palette and gradient or generate one randomly. 
+									Based on the apps Flat UI Colors and Material UI Colors.  Features include, colour picker, reordering colours with drag and drop, add, delete minipalette or reset entire page.
+									<br/><strong>Technology used: </strong><em>HTML5, CSS3, SASS, Material-UI, React, React Router.</em> <br/><strong>Third party libraries:</strong><em> array-move.js, chroma-js, emoji-mart, rc-slider.js, react-color.js, react-copy-to-clipboard, react-material-ui-form-validator, react-material-ui-form-validator.</em>
+								</p>
 								<ul class="actions special">
-									<li><a href="https://github.com/stamandf/colours-app" class="button large">View Code</a></li>
+									<li><a href="https://github.com/stamandf/colours-app" class="button large" target="_blank">View Code</a></li>
 								</ul>
 							</article>
 
@@ -76,140 +82,99 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">The Chat App<br />
-										ipsum faucibus</a></h2>
+										<h2><a href="https://salty-ridge-32276.herokuapp.com/" target="_blank">The Chat App<br /></a></h2>
+										<!-- Photo by Jae Park on Unsplash -->
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>This Chat App was developped with Expressjs, Nodejs, Socket.io, 
-										Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://salty-ridge-32276.herokuapp.com/" class="image fit" target="_blank"><img src="images/chatApp.jpg" alt="Chat App"/></a>
+									<p> The Chat App allows a user to type in a display name, create a chat or join multiple chat rooms. 
+										When a member joins for the first time, a Bot sends a welcome message.  Members of each chat room can send messages to each other, share their current location as well as images.
+										<br/><strong>Technology used: </strong><em>Expressjs, Nodejs and Socket.io.</em> <br/><strong>Third party libraries:</strong><em> moment.js, mustache.js, jQuery, deparam.js.</em>
+										<br/><strong>Unit testing: </strong><em></em>mocha.js and expect.js.</em>
+										</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Code</a></li>
+										<li><a href="https://github.com/stamandf/node-course2-chat-app" class="button" target="_blank">View Code</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
+										<h2><a href="https://cozmicflo-mllelasalxpe.herokuapp.com/">SkinBeauty<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://cozmicflo-mllelasalxpe.herokuapp.com/" class="image fit" target="_blank"><img src="images/skinBeauty.jpg" alt="SkinBeauty" /></a>
+									<!-- Photo by Park Street on Unsplash -->
+									<p>A website in progress for a SkinBeauty cream foundation product line. 
+										<br/><strong>Technology used: </strong><em>HTML5, CSS3, SASS.</em>
+										<br/><strong>Third party libraries:</strong><em> jQuery.</em>
+									</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://github.com/stamandf/MlleLaSalxpe" class="button" target="_blank">View code</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
+										<h2><a href="https://cozmicflo-expensify-app.herokuapp.com/">Expensify App<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://cozmicflo-expensify-app.herokuapp.com/" class="image fit"><img src="images/coins.jpg" alt="Expensify App" /></a>
+									<!-- Photo by Michael Longmire on Unsplash -->
+									<p> The Expensify App allows a user to track expenses. After login with a gmail account, the user can add, remove and edit expenses.
+										A dashboard allows to search expenses and filter by date.
+											<br/><strong>Technology used: </strong><em>HTML5, CSS3, SASS, Babel, Expressjs, Firebase, Nodejs, React, Redux, Webpack.</em> <br/><strong>Third party libraries:</strong><em> moment.js, uuid.js,history.js, validator.js .</em>
+											<br/><strong>Unit testing: </strong><em></em>jest.js and enzyme.js.</em>
+									</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://github.com/stamandf/expensify" class="button">View code</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
+										<h2><a href="https://cozmicflo-natours.herokuapp.com/" target="_blank">Natour<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://cozmicflo-natours.herokuapp.com/" class="image fit" target="_blank"><img src="images/natours.jpg" alt="Natour"/></a>
+									<p>Website for booking Nature tours. Front-end template.
+										<br/><strong>Technology used: </strong><em>HTML5, CSS3, SASS.</em>
+									</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://github.com/stamandf/Natours-Website" class="button">View code</a></li>
+									</ul>
+								</article>
+								<!-- <article>
+									<header>
+										<h2><a href="https://cozmicflo-nexter.herokuapp.com/" target="_blank">Nexter<br /></a></h2>
+									</header>
+									<a href="https://cozmicflo-nexter.herokuapp.com/" class="image fit" target="_blank"><img src="images/pic06.jpg" alt="Nexter" /></a>
+									<p>Real Estate website for luxurious homes. Front-end template.
+										<br/><strong>Technology used: </strong><em>HTML5, CSS3, SASS.</em>
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/stamandf/Nexter" class="button" target="_blank">View code</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
+										<h2><a href="#">Trillo<br /></a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
-								</article>
+								</article> -->
 							</section>
 
 						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
-
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
 						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="#">stamandf@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/florencestamand/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/stamandf" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -217,7 +182,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy;<script type="text/javascript">document.write(moment().format("YYYY"));</script>    Florence St-Amand</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
@@ -230,6 +195,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
