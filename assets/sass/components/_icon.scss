@@ -24,6 +24,11 @@
 				font-weight: 900;
 			}
 		}
+		&.solid {
+			&:before {
+				color: #ffffff;
+			}
+		}
 
 		&.brands {
 			&:before {
